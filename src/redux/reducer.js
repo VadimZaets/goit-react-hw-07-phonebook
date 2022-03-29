@@ -36,6 +36,9 @@ const loading = createReducer(false, {
   [removeContactRequest]: () => true,
   [removeContactSuccess]: () => false,
   [removeContactError]: () => false,
+  [fetchContactRequest]: () => true,
+  [fetchContactSuccess]: () => false,
+  [fetchContactError]: () => false,
 });
 const filter = createReducer("", {
   [changeFilter]: (_, { payload }) => payload,
